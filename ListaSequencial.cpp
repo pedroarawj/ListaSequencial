@@ -71,8 +71,3 @@ int ListaSequencial::remover(int posicao) {
     tamanho_atual--;
     return valor;
 }
-
-int main(){
-
-	return 0;
-}
