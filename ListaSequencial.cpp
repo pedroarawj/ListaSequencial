@@ -53,6 +53,7 @@ bool ListaSequencial::inserir(int valor, int posicao) {
         valores[i] = valores[i - 1];
     }
 
+    cout << "Elemento inserido com sucesso" << endl;
     valores[posicao - 1] = valor;
     tamanho_atual++;
     return true;
@@ -69,5 +70,7 @@ int ListaSequencial::remover(int posicao) {
     }
 
     tamanho_atual--;
+    cout << "Elemento removido com sucesso" << endl;
     return valor;
+    
 }

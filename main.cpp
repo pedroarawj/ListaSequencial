@@ -8,9 +8,10 @@ int main() {
 
     cout << "Lista vazia? " << (lista.vazia() ? "Sim" : "Nao") << endl;
 
-    lista.inserir(9, 5);
-    lista.inserir(150, 9); 
-    lista.inserir(19, 9); 
+    lista.inserir(9, 1);
+    lista.inserir(150, 2); 
+    lista.inserir(19, 2); 
+
 
     cout << "Lista vazia? " << (lista.vazia() ? "Sim" : "Nao") << endl;
     
@@ -25,8 +26,8 @@ int main() {
     int pos = lista.posicao(9);
     cout << "Posicao do valor 9: " << pos << endl;
 
-    int removido = lista.remover(9);
-    cout << "Elemento removido da posicao 2: " << removido << endl;
+    int removido = lista.remover(1);
+    cout << "Elemento removido da posicao 1: " << removido << endl;
 
     cout << "Lista apos remocao: ";
     for (int i = 1; i <= lista.tamanho(); i++) {
